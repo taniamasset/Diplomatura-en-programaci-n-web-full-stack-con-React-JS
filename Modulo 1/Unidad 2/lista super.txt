@@ -4,3 +4,6 @@ leche
 sal
 aceite
 vinagre
+detergente 
+esponja
+jabon
