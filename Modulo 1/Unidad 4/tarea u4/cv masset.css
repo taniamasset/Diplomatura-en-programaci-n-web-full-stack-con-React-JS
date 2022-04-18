@@ -1,0 +1,21 @@
+p{
+    font-style: italic;
+}
+h1{ color: blue;}
+h2{
+    color: indigo;
+}
+.distinto {font-weight: bold;}
+
+#titulo {width: 300px;
+    height: 100px;
+    
+    margin: 0 auto;
+}
+#competencias { width: 300px;
+    height: 150px;
+    background-color:aquamarine;
+    margin-bottom: auto;
+    
+    
+}

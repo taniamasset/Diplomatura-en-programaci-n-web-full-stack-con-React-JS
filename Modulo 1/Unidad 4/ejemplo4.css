@@ -1,0 +1,27 @@
+p{
+    color: blueviolet;
+}
+h1{ color: brown;}
+.destacados{ color: pink;
+font-weight: bold;
+font-style: italic;}
+#azul{
+    width: 300px;
+    height: 200px;
+    background-color: blue;
+    padding: 20px;
+    box-sizing: border-box;
+    /*margin: 0 auto;*/
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border: 2px solid red;
+}
+
+#rojo{
+    width: 300px;
+    height: 200px;
+    background-color:red;
+    margin: 0 auto;
+    border-right: 5px solid black;
+}
