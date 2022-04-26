@@ -1,18 +1,36 @@
-.caja { width: 400px;
-height: 400px;
-background: #22b11a;
-background: linear-gradient(113deg,#22b11a 0%, #b6ff00 80%);
-background: -webkit-linear-gradient(113deg,#22b11a 0%, #b6ff00 80%);
-background: -moz-linear-gradient(113deg,#22b11a 0%, #b6ff00 80%);
-/*cssgenerator.org*/
-margin: 100px;
-color: white;
-padding: 20px;
-box-sizing: border-box;
-border-radius: 200px 200px 200px 200px;
--webkit-border-radius: 200px 200px 200px 200px;
--moz-border-radius: 200px 200px 200px 200px;
-/* cssgenerator.org */
-box-shadow: 10px -10px 5px gray;
-column-count: 3;} 
-.caja p{margin: 0;}
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Water Brush', cursive;*/
+h1 {
+    color: yellow;
+    font-family: 'Water Brush', cursive;
+    font-size: 150px;
+    margin: 0;
+}
+
+.caja {
+    width: 400px;
+    height: 400px;
+    background: #22b11a;
+    background: linear-gradient(113deg, #22b11a 0%, #b6ff00 80%);
+    background: -webkit-linear-gradient(113deg, #22b11a 0%, #b6ff00 80%);
+    background: -moz-linear-gradient(113deg, #22b11a 0%, #b6ff00 80%);
+    /*cssgenerator.org*/
+    margin: 100px;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    /* cssgenerator.org */
+    box-shadow: 10px -10px 5px gray;
+    column-count: 3;
+}
+
+.caja p {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    color: #22b11a;
+}
+.grande{color: #22b11a;
+font-size: 150px;}
