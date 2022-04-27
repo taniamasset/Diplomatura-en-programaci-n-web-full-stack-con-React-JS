@@ -1,31 +1,35 @@
-div{
-    width: 200px;
-    height: 200px;
-    background-color: yellow;
-    cursor: pointer;
+div {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  cursor: pointer;
 }
 
- div:hover {
+div:hover {
   background-color: #F89B4D;
-} 
-  div:first-child{ margin-left: 0%;} 
-    /*y :last-child  
+}
+
+/* div:first-child{ margin-left: 0%;}  */
+/*y :last-child  
  :nth-child()  */
 
-span{
+span {
   background-color: yellow;
-  border:1px solid black;
+  border: 1px solid black;
   padding: 10px;
 }
 
 
-span::after{
- content: 'despues';
- background-color: red;
+span::after {
+  content: 'despues';
+  background-color: red;
 }
 
-span::before{
- content: 'antes';
- background-color: blue;
+span::before {
+  content: 'antes';
+  background-color: blue;
 }
-#pruebaborde{ border: 1px solid;}
+
+#pruebaborde {
+  border: 1px solid;
+}
