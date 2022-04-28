@@ -1,0 +1,33 @@
+.contenedor {
+    background-color: white;
+    border: 1px solid;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.item {
+    color: antiquewhite;
+    margin: 0;
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.item:first-child {
+    background-color: red;
+}
+
+.item:nth-child(2) {
+    background-color: blue
+}
+
+.item:last-child {
+    background-color: green;
+}
