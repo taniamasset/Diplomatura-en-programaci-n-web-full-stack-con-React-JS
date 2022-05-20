@@ -1,1 +1,60 @@
 /*font-family: 'Nunito', sans-serif;  */
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header {
+    background-color: blue;
+    padding: 16px 0;
+}
+
+header h1 {
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    margin-left: 10px;
+}
+nav{
+    background-color: lightblue;
+    margin-bottom: 20px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    flex-grow: 1;
+}
+nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+
+}
+nav ul li a:hover {
+    background-color:rgba(0, 0, 0, 0.5);
+}
+nav ul li a.activo { background-color:rgb(84, 84, 143);}
+
+footer {
+background-color: gray;
+clear: both;
+color: rgb(42, 41, 41);
+text-align: center;
+padding: 50px 0;
+margin-top: 20px;
+}
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+}
