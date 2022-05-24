@@ -1,7 +1,7 @@
 .contenedor{
 	background-color: blue;
-	/* display: inline-flex; */
-	display: flex;
+	display: inline-flex;
+	/* display: flex; */
 }
 
 .item{
