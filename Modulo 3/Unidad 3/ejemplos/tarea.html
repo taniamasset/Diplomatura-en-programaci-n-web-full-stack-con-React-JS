@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var Metros;
+
+        Metros = prompt('Ingrese distancia recorrer en metros:', '');
+
+
+        Metros = parseInt(Metros); // parseInt > para que el operador + sume los contenidos de los valores numéricos ingresados por teclado
+
+
+        if (Metros < 1000) {
+            document.write('El medio de transporte recomendado es a pie');
+        }
+        else {
+            if (Metros > 1000 && Metros < 10000) { document.write('El medio de transporte recomendado es la bicicleta'); }
+
+             else {
+                if (Metros > 10000 && Metros < 30000) { document.write('El medio de transporte recomendado es el colectivo'); }
+
+                else {
+                    if (Metros > 30000 && Metros < 100000) { document.write('El medio de transporte recomendado es el auto'); }
+                
+                    else {
+                        if (Metros > 100000) { document.write('El medio de transporte recomendado es el avion'); }
+                    }
+                    
+                }
+            }
+            
+        }
+    </script>
+</body>
+
+</html>
