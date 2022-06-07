@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var numerosaletorios = ["3", "7", "8", "1"]
+        var primero = numerosaletorios[0]
+        var segundo = numerosaletorios[1]
+        var tercero = numerosaletorios[2]
+        var cuarto = numerosaletorios[3]
+
+        primero = parseInt(primero)
+        segundo = parseInt(segundo)
+        tercero = parseInt(tercero)
+        cuarto = parseInt(cuarto)
+
+        if (primero > segundo && primero > tercero && primero > cuarto) { document.write("El mayor es " + primero) }
+        else {
+            if (segundo > primero && segundo > tercero && segundo > cuarto) { document.write("El mayor es " + segundo) }
+            else {
+                if (tercero > primero && tercero > segundo && tercero > cuarto) { document.write("El mayor es " + tercero) }
+                else { if (cuarto > primero && cuarto > segundo && cuarto > tercero) { document.write("El mayor es " + cuarto) } }
+            }
+        }
+
+    </script>
+</body>
+
+</html>
