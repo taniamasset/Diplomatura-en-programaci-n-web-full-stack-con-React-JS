@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tarea1.css">
+    <title>Tarea 1</title>
+</head>
+<h1>Cambiar color de fondo del documento</h1>
+<body>
+    <button class="boton" id="azul"></button>
+    <button class="boton" id="amarillo"></button>
+    <button class="boton" id="verde"></button>
+    <script>
+        var azul = document.getElementById("azul")
+        var amarillo = document.getElementById("amarillo")
+        var verde = document.getElementById("verde")
+        var body = document.querySelector("body")
+
+        azul.addEventListener('click', function() {
+            body.style.backgroundColor = 'blue'
+        })
+        amarillo.addEventListener('click', function() {
+            body.style.backgroundColor = 'yellow'
+        })
+        verde.addEventListener('click', function() {
+            body.style.backgroundColor = 'green'
+        })
+
+
+
+    </script>
+
+</body>
+</html>
