@@ -1,0 +1,17 @@
+.fotoinicio {
+    max-width: 100%;
+}
+.homeimg {
+    width: 75%;
+}
+.Bienvenidos {
+    width: 25%;
+    /* padding-right: 10px; */
+    box-sizing: border-box;
+    font-size: 20px;}
+
+ .columnas{
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+ }

@@ -1,3 +1,4 @@
+
 const NovedadesPage = (props) => {
     return ( <main className="holder">
     <h2>Novedades</h2>

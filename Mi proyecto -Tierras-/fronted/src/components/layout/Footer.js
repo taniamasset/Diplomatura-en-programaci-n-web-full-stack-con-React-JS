@@ -1,4 +1,5 @@
+import'../../styles/layout.css'
 const Footer = (props) => {
-    return (<div><p> Diseñado por Tania Masset - &copy;año</p></div>);
+    return (<footer><p> Diseñado por Tania Masset - &copy;año</p></footer>);
 }
 export default Footer;

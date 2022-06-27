@@ -1,3 +1,4 @@
+import'../styles/ProyectosPage.css'
 const ProyectosPage = (props) => {
     return (<main className="holder">
     <h2>Proyectos actuales</h2>
