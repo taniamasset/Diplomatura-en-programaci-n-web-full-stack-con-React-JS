@@ -1,4 +1,4 @@
-var pool = require('./bd'); //llamando datos bd
+var pool = require('./bd'); //llamando a datos bd
 var md5 = require('md5');
 
 async function getUserByUsernameAndPassword(user, password){
