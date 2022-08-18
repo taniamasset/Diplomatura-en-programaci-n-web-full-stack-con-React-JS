@@ -1,0 +1,43 @@
+<div class="container" style="margin-top: 50px;">
+    <div class="row">
+        <p class="text-end">Hola {{persona}} ! <a class="btn btn-danger " href="/admin/login/logout">Cerrar sesion <i
+                    class="fas fa-sign-out-alt"></i></a></p>
+    </div>
+
+    {{!-- fin fila 1 --}}
+    <div class="row">
+        <div class="col-7">
+            <h1>Listado de Proyectos</h1>
+        </div>
+        <div class="col-5 text-end"> <a class="btn btn-success" href="/admin/proyectos/agregar"> <i class="fa fa-plus" aria-hidden="true"></i>
+                Nuevo</a></div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead>
+                    <tr class="table-dark">
+                        <th scope="col">#</th>
+                        <th scope="col">Proyectos</th>
+                        <th scope="col">Descripcion</th>
+                        <th class="text-end">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each proyectos}}
+                    <tr>
+                        <th scope="row">{{id}}</th>
+                        <td>{{proyecto}}</td>
+                        <td>{{descripcion}}</td>
+                        <td class="text-end">
+                            <a class="btn btn-secondary" href="/admin/proyectos/modificar/{{id}}"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                        <a class="btn btn-secondary" href="/admin/proyectos/eliminar/{{id}}"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                        </td>
+
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
