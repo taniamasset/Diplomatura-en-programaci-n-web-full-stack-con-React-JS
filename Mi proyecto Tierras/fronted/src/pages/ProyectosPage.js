@@ -1,36 +1,38 @@
-import'../styles/ProyectosPage.css'
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import ProyectoItem from '../components/proyectos/ProyectoItem';
+import '../styles/ProyectosPage.css'
 const ProyectosPage = (props) => {
+    const [loading, setLoading] = useState(false);
+    const [proyectos, setProyectos] = useState([]);
+
+    useEffect(() => {
+        const cargarProyectos = async () => {
+            setLoading(true);
+            //const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/proyectos`);
+
+            const response = await axios.get('http://localhost:3000/api/proyectos');
+            setProyectos(response.data);
+            setLoading(false);
+
+        };
+
+        cargarProyectos();
+    }, []);
+
+
     return (<main className="holder">
-    <h2>Proyectos actuales</h2>
-    <div className="proyecto">
-        <img src="img/foto proyectos/proyecto1.jpg" alt="Localidad A"/>
-        <div className="info">
-            <h4>Localidad A</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non perspiciatis aperiam, praesentium
-                aliquam enim laudantium, dolorum, vitae error quas repudiandae quia eum odit nihil quos accusantium
-                molestiae pariatur explicabo rerum.</p>
-        </div>
-
-    </div>
-    <div className="proyecto">
-        <img src="img/foto proyectos/proyecto2.jpg" alt="Localidad B"/>
-        <div className="info">
-            <h4>Localidad B</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non perspiciatis aperiam, praesentium
-                aliquam enim laudantium, dolorum, vitae error quas repudiandae quia eum odit nihil quos accusantium
-                molestiae pariatur explicabo rerum.</p>
-        </div>
-
-    </div><div className="proyecto">
-        <img src="img/foto proyectos/proyecto3.jpg" alt="Localidad C"/>
-        <div className="info">
-            <h4>Localidad C</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non perspiciatis aperiam, praesentium
-                aliquam enim laudantium, dolorum, vitae error quas repudiandae quia eum odit nihil quos accusantium
-                molestiae pariatur explicabo rerum.</p>
-        </div>
-
-    </div>
-</main>);
+        <h1>Proyectos actuales</h1>
+        {
+            loading ? (
+                <p>Cargando...</p>
+            ) : (
+                proyectos.map(item => <ProyectoItem key={item.id}
+                    proyecto={item.proyecto} descripcion={item.descripcion}
+                    imagen={item.imagen}/>)
+            )
+        }
+        
+    </main>);
 }
 export default ProyectosPage;
