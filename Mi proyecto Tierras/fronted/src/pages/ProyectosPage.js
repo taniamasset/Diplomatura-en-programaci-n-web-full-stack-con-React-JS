@@ -9,9 +9,7 @@ const ProyectosPage = (props) => {
     useEffect(() => {
         const cargarProyectos = async () => {
             setLoading(true);
-            //const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/proyectos`);
-
-            const response = await axios.get('http://localhost:3000/api/proyectos');
+            const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/proyectos`);
             setProyectos(response.data);
             setLoading(false);
 
