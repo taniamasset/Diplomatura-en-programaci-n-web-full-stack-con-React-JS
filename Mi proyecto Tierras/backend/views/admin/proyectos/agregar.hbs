@@ -2,13 +2,17 @@
     <div class="row">
         <div class="col-6 offset-3">
             <h4>Agregar un nuevo proyecto</h4>
-            <form action="/admin/proyectos/agregar" method="post">
+            <form action="/admin/proyectos/agregar" method="post" enctype="multipart/form-data">
+                
                 <div class="mb-3 row"><input type="text" class="form-control" placeholder="Proyecto" name="proyecto">
                 </div>
+                
                 <div class="mb-3 row"><textarea type="text" class="form-control" placeholder="Descripcion"
                         name="descripcion"></textarea></div>
-                <div class="mb-3 row"><input type="text" class="form-control" placeholder="Foto"
-                        name="foto"></input></div>
+
+                <div class="mb-3 row"><label>Imagen: <input type="file" class="form-control" name="imagen" id="imagen"/>
+                </label</div>
+                
                 <button type="submit" class="btn btn-primary">Guardar</button>
             </form>
             {{#if error}}

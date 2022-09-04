@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-6 offset-3">
             <h4>Modificar el proyecto</h4>
-            <form action="/admin/proyectos/modificar" method="post">
+            <form action="/admin/proyectos/modificar" method="post" enctype="multipart/form-data" >
                 <input type="hidden" value="{{proyecto.id}}" name="id">
                 
                 <div class="mb-3 row">
@@ -13,9 +13,13 @@
                     <label for="">Descripcion</label>
                     <textarea class="form-control" name="descripcion">{{proyecto.descripcion}}</textarea>
                 </div>
+                
                 <div class="mb-3 row">
-                    <label for="">Foto</label>
-                    <input type="text" class="form-control" name="foto" value="{{proyecto.foto}}">
+                    <p>
+                    <label>Imagen: <input type="file" class="form-control" name="imagen"/></label></p>
+                    <p>
+                        <label><input type="checkbox" name="img_delete" id="img_delete" value="1">Eliminar imagen actual?</label> <input type="hidden" name="img_original" value="{{proyecto.img_id}}">
+                    </p>
                 </div>
 
 
